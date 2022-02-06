@@ -24,16 +24,3 @@ const server = http.createServer(
 );
 
 server.listen(port);
-
-console.log(`Listening to port: ${port}`);
-
-// function test(message) {
-//     console.log("message: " + message);
-// }
-
-// test("Hell world!");
-
-// low level handler
-// server.on("connection", (socket) => {
-//     console.log("new connection...");
-// });
