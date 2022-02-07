@@ -1,5 +1,6 @@
 const http = require("http");
 const port = 3000;
+const Users = require("./api/users.js");
 
 const server = http.createServer(
     (request, response) => {
@@ -9,7 +10,6 @@ const server = http.createServer(
         }
 
         if (request.url === "/api/users") {
-            const Users = require("./api/users.js");
             const person = new Users();
             var result = person.getUsers();
             response.write(result);
